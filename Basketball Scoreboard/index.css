@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Digital;
+    src: url('Fonts/Digital.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: green;
+}
+
+#timer-name {
+    color: red;
+    font-size: 60px;
+    margin: 5px ;
+}
+
+#panou { 
+    
+    font-family: Digital;
+    background-image: url("images/istockphoto-1766484345-2048x2048-transformed.jpeg"); 
+    background-position: center;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    border: 2px solid #fff; 
+    border-radius: 10px; 
+} 
+    
+#timer { 
+    font-size: 150px; 
+    background-color: black; 
+    color: red; 
+    border: 5px solid white; 
+    padding: 10px; 
+    margin: 10px; 
+}
+
+#echipe-scor {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;
+    font-size: 20px;
+
+}
+
+.echipa { 
+    padding: 10px;
+    color:orange;
+    border: 2px solid white;
+    background-color: black;
+    width: 200px;
+    text-align: center;
+}
+
+#butoane {
+   
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.buton {
+    width: 60px;
+    height: 60px;
+    margin: 10px 2px;
+    border: 2px solid black;
+    color: ;
+    font-size: 20px;
+    font-family:Digital;
+}
+
+
+
+#echipe-scor2 {
+    margin: 10px 0;
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;
+    font-size: 20px;
+}
+
+#fouls {
+    color: black;
+    text-shadow: 0px 1px red;
+    margin:0;
+    font-size: 100px;
+}
+
+.button-foul {
+    font-size: 40px;
+    font-family: Digital;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: red;
+    border: 2 px solid black;
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+}
+
+#new-game {
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+}

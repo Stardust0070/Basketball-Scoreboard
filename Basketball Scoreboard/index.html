@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<link rel="stylesheet" href="index.css">
+<title>Basketball Scoreboard</title>
+</head>
+
+<body>
+    <div id="panou">
+        <p id="timer-name">TIME</p>
+        <h1 id="timer">00:00</h1> 
+        
+        <div id="echipe-scor">
+            
+            <div class="echipa">
+                <h1>HOME</h1>
+                <p id="home-el">0</p>
+            </div>
+            <div id="butoane">
+                <button class="buton" onclick="plusOneHome()">+1</button>
+                <button class="buton" onclick="plusTwoHome()">+2</button>
+                <button class="buton" onclick="plusThreeHome()">+3</button>
+            </div>
+            <div class="echipa">
+                <h1>PERIOD</h1>
+                <h2>0</h2>
+            </div>
+            <div id="butoane">
+                <button class="buton" onclick="plusOneGuest()">+1</button>
+                <button class="buton" onclick="plusTwoGuest()">+2</button>
+                <button class="buton" onclick="plusThreeGuest()">+3</button>
+            </div>
+            <div class="echipa">
+                <h1 >GUEST</h1>
+                <h2 id="guest-el">0</h2>
+            </div>
+        </div>
+        <div id="echipe-scor2">
+            <div class="echipa">
+                <h2 id="foul-home">0</h2>
+            </div>
+            <button class="button-foul" onclick="foulHome()">+1</button>
+            <p ID="fouls">◀ FOULS ▶</p>
+            <button class="button-foul" onclick="foulGuest()">+1</button>
+            <div class="echipa">
+                <h2 id="foul-guest">0</h2>
+            </div>        
+        </div>
+        <button id="new-game" onclick="newGame()">New Game</button>
+    </div>
+    <script src="index.js"></script>   
+</body>
+
+</html> 
