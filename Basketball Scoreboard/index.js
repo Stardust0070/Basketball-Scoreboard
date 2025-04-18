@@ -10,6 +10,7 @@ let foulHomeEl = document.getElementById("foul-home")
 let foulGuestEl = document.getElementById("foul-guest")
 
 
+
 function plusOneHome() {
     punctajHome += 1
     homeEl.textContent = punctajHome
@@ -61,5 +62,41 @@ function newGame() {
     homeEl.textContent = 0
     foulHomeEl.textContent = 0
     foulGuestEl.textContent = 0
+    minutes = 0
+    seconds = 0
+    clearInterval(interval)
 }
 
+let minutes = 0;
+let seconds = 0;
+let period = 0;
+let interval;
+
+const timerEl = document.getElementById("timer");
+const periodEl = document.getElementById("period-el");
+function startGame () {
+    let interval = setInterval(() => {
+        seconds++;
+    
+        if (seconds === 60) {
+            seconds = 0;
+            minutes += 1;
+        }
+    
+        // Crește period când minutes este multiplu de 10 și seconds este 0
+        if (minutes % 10 === 0 && seconds === 0 && minutes !== 0) {
+            period += 1;
+            periodEl.textContent = period;
+        }
+    
+        // Oprește timerul la 40:00
+        if (minutes === 40 && seconds === 0) {
+            clearInterval(interval);
+        }
+    
+        timerEl.textContent = 
+            (minutes < 10 ? "0" + minutes : minutes) + ":" + 
+            (seconds < 10 ? "0" + seconds : seconds);
+    
+    }, 100);
+}
